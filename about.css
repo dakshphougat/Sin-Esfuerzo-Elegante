@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('photo.png'); /* Set your background image here */
+    background-size: cover; /* Ensures the image covers the entire body */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Ensures the image doesn't repeat */
+    overflow: hidden;
+}
+
+.cursor-image {
+    position: absolute;
+    width: 200px;  /* Increased size */
+    height: 200px; /* Increased size */
+    background-image: url('photo.png'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    animation: fadeOut 10s ease forwards; /* Extended fade-out to 10s */
+}
+
+/* Fade-out effect to remove old images after 10 seconds */
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+/* cursor dot*/
+
+.cursor-dot {
+    position: absolute;
+    width: 15px; /* Width of the dot */
+    height: 15px; /* Height of the dot */
+    background-color: rgb(232, 120, 169); /* Dot color */
+    border-radius: 50%; /* Make it round */
+    pointer-events: none; /* Prevent the dot from interfering with mouse events */
+    transform: translate(-50%, -50%); /* Center the dot */
+    transition: transform 0.1s; /* Smooth movement */
+}
