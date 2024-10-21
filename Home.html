@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sin esfuerzo elegante</title>
+  <link rel="stylesheet" href="Home.css">
+</head>
+<body>
+
+
+<!-----      THE CLOCK      ----->
+  <div class="time-location">
+    India, <span id="current-ist-time"></span>
+  </div>
+<script>
+function updateISTTime() {
+  const timeElement = document.getElementById('current-ist-time');
+  const now = new Date();
+  const utcHours = now.getUTCHours();
+  const utcMinutes = now.getUTCMinutes();
+  const istHours = (utcHours + 5 + Math.floor((utcMinutes + 30) / 60)) % 24;
+  const istMinutes = (utcMinutes + 30) % 60;
+  const ampm = istHours >= 12 ? 'PM' : 'AM';
+  const hours = istHours % 12 || 12;
+  const minutes = istMinutes.toString().padStart(2, '0');
+  timeElement.textContent = `${hours}:${minutes} ${ampm}`;
+}
+updateISTTime();
+setInterval(updateISTTime, 60000);
+</script>
+<!---------------------------------------------------------------->
+
+
+<!-----      NAVIGATION BAR      ----->
+  <div class="navbar">
+    <a href="#vto">VTO</a>
+    <span>/</span>
+    <a href="#about">ABOUT</a>
+    <span>/</span>
+    <a href="#demoshop">DEMO SHOP</a>
+    <span>/</span>
+    <a href="#profile">PROFILE</a>
+  </div>
+<!---------------------------------------------------------------->
+
+
+<!-----      SIN ESFUERZO ELEGANTE      ----->
+  <div class="centered-text">
+    <h1>sin esfuerzo elegante</h1>
+  </div>
+<!---------------------------------------------------------------->
+
+
+<!-----      BACKGROUND VIDEO      ----->
+  <div class="video-background">
+    <video autoplay muted loop playsinline>
+      <source src="media/bgvid.mp4" type="video/mp4">
+      <source src="media/bgvid.mp4" type="video/webm">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+<!---------------------------------------------------------------->
+
+
+<!-----      SCROLLABLE VIDEO      ----->
+  <div class="content">
+    <div class="video-container">
+      <video id="scrollVideo" autoplay muted loop>
+        <source src="media/scrollvid.mov" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+<!---------------------------------------------------------------->
+
+
+<!-----      NEW SECTION: FACTS AND HEADLINE      ----->
+<section class="next-section">
+  <div class="next-section-container">
+    <div class="left-side-facts">
+      <p class="serious-facts-title">Serious Facts</p>
+      <p class="fact-number">03 / 03</p>
+      <p class="fact-text"><span class="big-number">25+</span><br>Nominations and Awards celebrating our passion</p>
+      <div class="fact-buttons">
+        <button id="prev-button" class="arrow-button">&larr;</button>
+        <button id="next-button" class="arrow-button">&rarr;</button>
+      </div>
+    </div>
+    <div class="right-side-content">
+      <h1 class="main-headline">Crafting premium brands for startups that make people smile</h1>
+      <a href="#" class="about-link">About us <span class="arrow-right">&larr;</span></a>
+    </div>
+  </div>
+</section>
+
+<!---------------------------------------------------------------->
+
+
+<!-----      BRAND STRATEGY      ----->
+<section class="brand-strategy">
+  <div class="content">
+      <h2>Brand Strategy</h2>
+      <p>At Sin Esfuerzo Elegante, our brand strategy centers around merging high fashion with advanced technology to create a seamless and sophisticated shopping experience. We aim to disrupt traditional fashion  platform where models can easily showcase their portfolios. Our focus is on empowering consumers and professionals to make informed fashion choices while reducing environmental impact through fewer returns. By combining accessibility, innovation, and style, we strive to build a brand that redefines fashion shopping for the modern era.
+      </p>
+  </div>
+  <div class="video">
+    <video autoplay muted loop controls>
+      <source src="media/brandvid.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    
+  </div>
+</section>
+<!---------------------------------------------------------------->
+
+
+<!-----      VISUAL IDENTITY      ----->
+<section class="visual-identity">
+  <div class="content">
+      <h2>Visual Identity</h2>
+      <p>Our visual identity speaks to elegance, innovation, and ease. We use a refined color palette of soft pastels, grounded with bold contrasts, to convey a sense of both luxury and approachability. The imagery reflects the runway experience, blending high-end fashion with technology. Clean lines, simple typography, and high-resolution visuals establish a sleek and modern feel. Every design element has been carefully curated to create a harmonious and visually captivating experience, ensuring that the brand exudes professionalism while staying fashionable.
+      </p>
+  </div>
+  <div class="video">
+    <video autoplay muted loop controls>
+      <source src="media/viusalid.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    
+  </div>
+</section>
+<!---------------------------------------------------------------->
+
+
+<!-----      WEBSITE SECTION      ----->
+<section class="website-section">
+  <div class="content">
+      <h2>Website</h2>
+      <p>The Sin Esfuerzo Elegante website offers a dynamic and interactive platform for users to explore both fashion and modeling. We’ve built a seamless and intuitive interface that makes navigating  try-ons and model portfolios effortless. With responsive design, the site is optimized for all devices, providing users with the same high-quality experience whether on desktop or mobile. Engaging visuals, interactive elements, and smooth animations work together to make browsing fun, immersive, and chic. The website is as much a fashion statement as the products it displays, creating a truly unique digital experience.
+      </p>
+  </div>
+  <div class="video">
+    <video autoplay muted loop controls>
+      <source src="media/website.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+     </div>
+</section>
+<!---------------------------------------------------------------->
+
+
+<!-----      PRODUCT SECTION      ----->
+<section class="product-section">
+  <div class="content">
+      <h2>Product</h2>
+      <p>Sin Esfuerzo Elegante offers more than just clothing; it offers an immersive fashion experience. Our product range includes exclusive clothing collections designed to inspire and elevate personal style. Additionally, our platform serves as a space where professional models can build and display their portfolios, making it a dual-purpose destination for both consumers and industry professionals. Together, these elements make our product offering a blend of high fashion and cutting-edge technology.</p>
+  </div>
+  <div class="video">
+    <video autoplay muted loop controls>
+      <source src="media/product.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+     </div>
+</section>
+<!---------------------------------------------------------------->
+
+
+<section class="aspiring-startups">
+  <div class="content-wrapper">
+    <h2>Revolutionizing Try-Ons<br><span>for the Modern Shopper!</span></h2>
+    <div class="video-grid">
+      <div class="video-item">
+        <video muted loop>
+          <source src="media/start1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="video-item">
+        <video muted loop>
+          <source src="media/start2.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+  // Select all video items
+  const videoItems = document.querySelectorAll('.video-item video');
+
+  videoItems.forEach(video => {
+    video.addEventListener('mouseenter', () => {
+      video.play(); // Play the video on hover
+    });
+
+    video.addEventListener('mouseleave', () => {
+      video.pause(); // Pause the video when not hovering
+      video.currentTime = 0; // Reset the video to the start
+    });
+  });
+</script>
+
+  <script src="Home.js"></script>
+</body>
+</html>
+
+<header id="main-header">
+  <div class="logo">
+    <h1 class="sin-esfuerzo-text">sin esfuerzo elegante</h1>
+  </div>
+</header>

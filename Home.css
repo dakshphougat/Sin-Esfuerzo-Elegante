@@ -1,0 +1,431 @@
+/* -----     FONT STYLES     ----- */
+@font-face {
+  font-family: 'Safiro Medium';
+  src: url('fonts/safiro-medium.woff2') format('woff2');
+  font-weight: 400; 
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Safiro Regular Italic';
+  src: url('fonts/safiro-regular-i.woff2') format('woff2');
+  font-weight: 400; 
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Safiro Regular';
+  src: url('fonts/safiro-regular.woff2') format('woff2');
+  font-weight: 400; 
+  font-style: normal;
+}
+/* -----------------------------------------------------------  */
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* -----     THE CLOCK     ----- */
+.time-location {
+  position: fixed;
+  margin-left: 75px;
+  top: 20px;
+  left: 20px;
+  font-family: 'Safiro Medium', sans-serif; 
+  font-size: 12px; 
+  color: rgb(80, 80, 80); 
+  z-index: 100; 
+}
+/* -----------------------------------------------------------  */
+
+
+body {
+  font-family: 'Safiro Regular', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #fbc1d4;
+  color: rgb(80, 80, 80); 
+  height: 200vh; 
+}
+
+
+/* -----     SIN ESFUERZO ELEGANTE     ----- */
+.centered-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 10;
+}
+.centered-text h1 {
+  font-family: 'Safiro Regular Italic', sans-serif;
+  font-weight: 400;
+  font-size: 96px;
+  line-height: 125px;
+  color: rgb(23, 25, 26);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+/* -----------------------------------------------------------  */
+
+
+/* -----     NAVIGATION BAR     ----- */
+.navbar {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 20;
+  font-size: 11px; 
+  line-height: 11px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-right: 75px;
+}
+.navbar a {
+  font-family: 'Safiro Medium', sans-serif;
+  font-weight: 400; 
+  font-style: normal;
+  text-decoration: none;
+  color: rgb(80, 80, 80); 
+  transition: color 0.3s ease;
+}
+.navbar a:hover {
+  color: #f39;
+}
+.navbar span {
+  font-weight: normal;
+  color: #aaa;
+}
+/* -----------------------------------------------------------  */
+
+
+.content {
+  position: relative;
+  height: 100%;
+}
+
+/* -----     SCROLLABLE VIDEO     ----- */
+.video-container {
+  width: 200px;
+  height: 150px;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  transition: transform 0.1s ease-out;
+  z-index: 999; 
+}
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+/* -----------------------------------------------------------  */
+
+
+/* -----     BACKGROUND VIDEO     ----- */
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+.video-background video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* -----------------------------------------------------------  */
+
+
+/* -----     NEXT SECTION     ----- */
+/* Section container */
+.next-section {
+  background-color: #FBC1D4; /* Pink background */
+  display: flex;
+  margin-top: 500px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  padding: 50px 0;
+  font-family: 'Safiro Regular', sans-serif; /* Safiro Regular font applied */
+}
+
+/* Layout container */
+.next-section-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Left side styling */
+.left-side-facts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  text-align: left;
+}
+
+.serious-facts-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #17191a;
+}
+
+.fact-number {
+  font-size: 18px;
+  color: #6D6D6D;
+  margin-bottom: 15px;
+}
+
+.fact-text {
+  font-size: 18px;
+  color: #17191a;
+  margin-bottom: 20px;
+}
+
+.big-number {
+  font-size: 48px;
+  font-weight: bold;
+  color: #17191a;
+}
+
+.fact-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.arrow-button {
+  background-color: #fff;
+  border: 1px solid #17191a;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.arrow-button:hover {
+  background-color: #17191a;
+  color: #fff;
+}
+
+/* Right side styling */
+.right-side-content {
+  width: 55%;
+  text-align: left;
+}
+
+.main-headline {
+  font-size: 64px; /* Large headline */
+  font-weight: bold;
+  font-family: 'Safiro Regular', sans-serif; /* Safiro Regular font applied */
+  color: #17191a;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.about-link {
+  font-size: 18px;
+  color: #17191a;
+  text-decoration: none;
+  padding: 10px 15px;
+  border: 1px solid #17191a;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  transition: background-color 0.3s ease;
+  font-family: 'Safiro Regular', sans-serif; /* Safiro Regular font applied */
+}
+
+.about-link:hover {
+  background-color: #17191a;
+  color: white;
+}
+
+.arrow-right {
+  font-size: 16px;
+  margin-left: 8px;
+}
+
+
+/* -----------------------------------------------------------  */
+
+
+/* General Section Styles */
+section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  margin-bottom: 20px;
+}
+
+.content {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.content h2 {
+  font-size: 2.5rem;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 1.25rem;
+  line-height: 1.6;
+}
+
+/* Video Area */
+.video {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video video {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Specific Section Styles */
+.brand-strategy {
+  background-color: #E5C8FF; /* Match with the light purple from the screenshot */
+}
+
+.visual-identity {
+  background-color: whitesmoke;
+}
+
+.website-section {
+  background-color: #F5D65B; /* Match with the yellow background */
+}
+
+.product-section {
+  background-color: #222; /* Dark background for product section */
+  color: #fff; /* White text on dark background */
+}
+
+@media (max-width: 768px) {
+  section {
+      flex-direction: column;
+      text-align: center;
+  }
+  
+  .content {
+      margin-right: 0;
+  }
+  
+  .video {
+      margin-top: 20px;
+  }
+}
+
+
+
+
+
+
+
+/* Initial styling for the sin esfuerzo text */
+.sin-esfuerzo-text {
+  font-size: 3rem;
+  transition: all 0.5s ease;
+  position: relative;
+}
+
+/* Shrinked version when scrolling */
+.shrink .sin-esfuerzo-text {
+  font-size: 1.5rem; /* Smaller size */
+  position: fixed;
+  top: 0;
+  left:0;
+  margin-left: 570px;
+  padding: 10px 20px; /* Adjust as needed */
+  z-index: 1000; /* Ensure it stays on top */
+}
+
+
+
+.aspiring-startups {
+  background-color: #FBC1D4; /* Updated background color */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.aspiring-startups h2 {
+  margin-top: 100px;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 80px;
+  color: #333; /* Dark text color */
+}
+
+.aspiring-startups h2 span {
+  font-weight: normal; /* Normal weight for the second line */
+}
+
+.video-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.video-item {
+  position: relative;
+  width: 45%;
+}
+
+.video-item video {
+  width: 100%;
+  height: auto;
+  border-radius: 10px; /* Rounded corners */
+  display: block; /* Ensures no extra space below the video */
+}
+
+.video-item:hover video {
+  display: block;
+}
+
+
+
+
+
+
+.cursor-image {
+  position: absolute;
+  width: 200px;  /* Increased size */
+  height: 200px; /* Increased size */
+  background-size: cover;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  animation: fadeOut 10s ease forwards; /* Extended fade-out to 10s */
+}
+
+/* Fade-out effect to remove old images after 10 seconds */
+@keyframes fadeOut {
+  0% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+  }
+}
